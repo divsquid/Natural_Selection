@@ -100,6 +100,36 @@ patternDV = [
         {"value": 720, "distance": 2, "hint": 'long-fur', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
     ],
+
+    [
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+    ],
+
+    [
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+    ],
+
+    [
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+    ],
+
+]
+
+patternVague_DV = [
+    [
+        {"value": 698, "distance": -1, "hint": 'vague DV', "pattern": 'vague DV', "type": 0},
+    ],
+]
+
+patternIncorrect_DV = [
+    [
+        {"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'incorrect DV', "type": 1},
+    ],
 ]
 
 patternIncrease_Foliage = [
@@ -117,6 +147,14 @@ patternIncrease_Foliage = [
         {"value": [700,800], "distance": 3, "hint": 'increase/more', "pattern": 'increase foliage', "type": 1},
         {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'increase foliage', "type": 0},
         {"value": 600, "distance": 3, "hint": 'foliage', "pattern": 'increase foliage', "type": 0},
+    ],
+
+    [
+        {"value": 805, "distance": 3, "hint": 'change', "pattern": 'increase foliage', "type": 0},
+        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'increase foliage', "type": 0},
+        {"value": 600, "distance": 4, "hint": 'foliage', "pattern": 'increase foliage', "type": 0},
+        {"value": 606, "distance": 5, "hint": 'environment', "pattern": 'increase foliage', "type": 0},
+        {"value": [700,800], "distance": 2, "hint": 'increase/more', "pattern": 'increase foliage', "type": 1},
     ],
 ]
 
@@ -157,17 +195,6 @@ patternChange_Foliage = [
         {"value": 600, "distance": 3, "hint": 'foliage', "pattern": 'change foliage', "type": 0},
     ],
 
-    #handles case where only 1 "increase" is mentioned but is picked up by both IVR and DVR patterns incorrectly
-    [
-        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'change foliage', "type": 0},
-        {"value": 600, "distance": 3, "hint": 'foliage', "pattern": 'change foliage', "type": 0},
-        {"value": [700,800], "distance": 2, "hint": 'increase', "pattern": 'change foliage', "type": 1},
-        {"value": 604, "distance": 2, "hint": 'amount', "pattern": 'change foliage', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage', "type": 0},
-        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change foliage', "type": 0},
-        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change foliage', "type": 0},
-        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'change foliage', "type": 0},
-    ],
 ]
 
 patternIncrease_GreenLongHairSlinquettes = [
@@ -185,6 +212,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -193,6 +221,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -201,6 +230,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -209,6 +239,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -217,12 +248,20 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
-    ],
 
+    ],
 
     [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+    ],
+
+    [
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
@@ -230,14 +269,6 @@ patternIncrease_GreenLongHairSlinquettes = [
 
     [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
-        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
-        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
-        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
-    ],
-
-    [
-        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
@@ -258,6 +289,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -266,6 +298,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -274,6 +307,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -283,6 +317,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -292,6 +327,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -301,6 +337,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -310,6 +347,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -319,6 +357,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -327,6 +366,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -335,6 +375,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -344,6 +385,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -351,6 +393,7 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 720, "distance": 2, "hint": 'long-fur', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -359,7 +402,9 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 720, "distance": 2, "hint": 'long-fur', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
     ],
+
     [
         {"value": 721, "distance": 2, "hint": 'optimal', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'increase green, long haired slinquettes', "type": 0},
@@ -367,8 +412,70 @@ patternIncrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
 
     ],
+
+    [
+        {"value": 722, "distance": 2, "hint": 'final', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'increase green,long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 3, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+
+    ],
+
+    [
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 3, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        {"value": 711, "distance": 3, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'increase green,long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 3, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 3, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'increase green,long haired slinquettes', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+    ],
+
+    #DVR pattern for vague DV 'vaguedv'
+    [
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'increase green,long haired slinquettes', "type": 1},
+        {"value": 698, "distance": 3, "hint": 'vague DV', "pattern": 'increase green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'increase green, long haired slinquettes', "type": 3},
+    ],
+
 ]
 
 patternDecrease_GreenLongHairSlinquettes = [
@@ -378,6 +485,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -386,6 +494,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -394,6 +503,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -402,6 +512,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -410,6 +521,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -418,23 +530,26 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
 
     [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
-    ],
-
-    [
-        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
-        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
-        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
-        {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -443,6 +558,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -451,6 +567,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -459,6 +576,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -467,6 +585,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": [701,801], "distance": 3, "hint": 'Decrease', "pattern": 'Decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -475,6 +594,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -484,6 +604,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -493,6 +614,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -502,6 +624,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -511,6 +634,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -520,6 +644,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -528,6 +653,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'decrease green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -536,6 +662,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'decrease green, long haired slinquettes', "type": 0},
         {"value": [701,801], "distance": 3, "hint": 'decrease', "pattern": 'decrease green,long haired slinquettes', "type": 1},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
     [
@@ -545,6 +672,7 @@ patternDecrease_GreenLongHairSlinquettes = [
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'decrease green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'decrease green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'decrease green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'decrease green,long haired slinquettes', "type": 3},
     ],
 
 ]
@@ -556,6 +684,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -564,6 +693,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -572,6 +702,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -580,6 +711,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -588,6 +720,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -596,23 +729,25 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
-
 
     [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
-    ],
-
-    [
-        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
-        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
-        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
-        {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -621,6 +756,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -629,6 +765,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -637,6 +774,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -645,6 +783,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 805, "distance": 3, "hint": 'Change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+       #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -654,6 +793,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+       #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -664,6 +804,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -674,6 +815,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -684,6 +826,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -694,6 +837,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -704,6 +848,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'Change green, long haired slinquettes', "type": 0},
         {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -712,6 +857,7 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change green, long haired slinquettes', "type": 0},
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
@@ -720,16 +866,35 @@ patternChange_GreenLongHairSlinquettes = [
         {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change green, long haired slinquettes', "type": 0},
         {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change green, long haired slinquettes', "type": 0},
         {"value": 805, "distance": 3, "hint": 'change', "pattern": 'change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
     [
-        {"value": 805, "distance": 3, "hint": 'change', "pattern": 'change foliage increase exception', "type": 0},
-        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'change foliage increase exception', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage increase exception', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage increase exception', "type": 0},
-        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change foliage increase exception', "type": 0},
-        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change foliage increase exception', "type": 0},
-        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 805, "distance": 3, "hint": 'change', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": 805, "distance": 3, "hint": 'change', "pattern": 'change green,long haired slinquettes', "type": 0},
+        {"value": 707, "distance": 3, "hint": 'possibility', "pattern": 'change green,long haired slinquettes', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change green, long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
+    ],
+
+    [
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'Change green, long haired slinquettes', "type": 0},
+        {"value": 805, "distance": 3, "hint": 'change', "pattern": 'Change green,long haired slinquettes', "type": 0},
+        #{"value": [710,712], "distance": -1, "hint": 'red and short', "pattern": 'Change green, long haired slinquettes', "type": 3},
     ],
 
 ]
@@ -737,14 +902,45 @@ patternChange_GreenLongHairSlinquettes = [
 #handles case where only 1 "increase" is mentioned but is picked up by both IVR and DVR patterns incorrectly
 patternChange_FoliageIncreaseException = [
     [
-        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'change foliage', "type": 0},
-        {"value": 600, "distance": 3, "hint": 'foliage', "pattern": 'change foliage', "type": 0},
-        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'change foliage', "type": 1},
-        {"value": 604, "distance": 2, "hint": 'amount', "pattern": 'change foliage', "type": 0},
-        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage', "type": 0},
-        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change foliage', "type": 0},
-        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change foliage', "type": 0},
-        {"value": 601, "distance": 2, "hint": 'slinquettes', "pattern": 'change foliage', "type": 0},
+        {"value": 604, "distance": 3, "hint": 'amount', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 600, "distance": 3, "hint": 'foliage', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": [700,800], "distance": 2, "hint": 'increase', "pattern": 'change foliage increase exception', "type": 1},
+        {"value": 604, "distance": 2, "hint": 'amount', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 602, "distance": 2, "hint": 'hair', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change foliage increase exception', "type": 0},
+       #{"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'change foliage increase exception', "type": 3},
+    ],
+
+    [
+
+        {"value": 805, "distance": 2, "hint": 'change', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 600, "distance": 4, "hint": 'foliage', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'change foliage increase exception', "type": 1},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 713, "distance": 2, "hint": 'long', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 602, "distance": 3, "hint": 'hair', "pattern": 'change foliage increase exception', "type": 0},
+        #{"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'change foliage increase exception', "type": 3},
+
+     ],
+
+    [
+        {"value": 600, "distance": 3, "hint": 'foliage', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'change foliage increase exception', "type": 1},
+        {"value": 604, "distance": 2, "hint": 'amount', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 711, "distance": 2, "hint": 'green', "pattern": 'change foliage increase exception', "type": 0},
+        {"value": 601, "distance": 3, "hint": 'slinquettes', "pattern": 'change foliage increase exception', "type": 0},
+       # {"value": [700,800], "distance": 3, "hint": 'increase', "pattern": 'change foliage increase exception', "type": 3},
+    ],
+
+]
+
+#Overwrites Above Exception if there's two "increases"
+patternIncrease_FoliageChangeException = [
+    [
+        {"value": 805, "distance": -1, "hint": 'change', "pattern": 'change', "type": 0},
     ],
 ]
 
@@ -934,20 +1130,24 @@ patternThriving = [
         {"value": 601, "distance": 5, "hint": 'slinquettes', "pattern": 'slinquettes thriving', "type": 0},
     ],
 ]
+
 patternsToRun = [
         {'pattern': patternIV,                       'name': 'patternIV',                     'desc': 'Text relevance check'},
         {'pattern': patternDV,                       'name': 'patternDV',                     'desc': 'Text relevance check'},
+        {'pattern': patternVague_DV,                     'name': 'patternVague_DV',                      'desc': 'Text relevance check'},
+        {'pattern': patternIncorrect_DV,                    'name': 'patternIncorrect_DV',                  'desc': 'Text relevance check'},
         {'pattern': patternIncrease_Foliage,                       'name': 'patternIncrease_Foliage',                     'desc': 'Concept: increase foliage'},
         {'pattern': patternDecrease_Foliage,                       'name': 'patternDecrease_Foliage',                     'desc': 'Concept: decrease foliage'},
         {'pattern': patternChange_Foliage,                       'name': 'patternChange_Foliage',                     'desc': 'Concept: change foliage'},
         {'pattern': patternIncrease_GreenLongHairSlinquettes,                       'name': 'patternIncrease_GreenLongHairSlinquettes',                     'desc': 'Concept: increase GreenLongHairSlinquettes'},
         {'pattern': patternDecrease_GreenLongHairSlinquettes,                       'name': 'patternDecrease_GreenLongHairSlinquettes',                     'desc': 'Concept: decrease GreenLongHairSlinquettes'},
         {'pattern': patternChange_GreenLongHairSlinquettes,                       'name': 'patternChange_GreenLongHairSlinquettes',                     'desc': 'Concept: change GreenLongHairSlinquettes'},
-        {'pattern': patternChange_FoliageIncreaseException,                         'name':'patternChange_FoliageIncreaseException',                    'desc': 'Concept: change foliage, increase slinquettes'},
+        {'pattern': patternChange_FoliageIncreaseException,                         'name': 'patternChange_FoliageIncreaseException',                    'desc': 'Concept: change foliage, increase slinquettes'},
+        {'pattern': patternIncrease_FoliageChangeException,                     'name': 'patternIncrease_FoliageChangeException',                     'desc': 'Concept: increase foliage, increase slinquettes'},
         {'pattern': patternChange,                       'name': 'patternChange',                     'desc': 'Concept: change'},
-        {'pattern': patternFoliage_Lots,                       'name': 'patternFoliage_Lots',                     'desc': 'Concept: lots of foliage'},
-        {'pattern': patternFoliage_Some,                       'name': 'patternFoliage_Some',                     'desc': 'Concept: some foliage'},
         {'pattern': patternFoliage_None,                       'name': 'patternFoliage_None',                     'desc': 'Concept: none foliage'},
+        {'pattern': patternFoliage_Some,                       'name': 'patternFoliage_Some',                     'desc': 'Concept: some foliage'},
+        {'pattern': patternFoliage_Lots,                       'name': 'patternFoliage_Lots',                     'desc': 'Concept: lots of foliage'},
         {'pattern': patternIn_Trial,                       'name': 'patternIn_Trial',                     'desc': 'Concept: trial'},
         {'pattern': patternVague_Trials,                       'name': 'patternVague_Trials',                     'desc': 'Concept: vague trial'},
         {'pattern': patternExtinct,                       'name': 'patternExtinct',                     'desc': 'Concept: slinquettes extinct'},
@@ -957,6 +1157,7 @@ patternsToRun = [
         {'pattern': patternThriving,                       'name': 'patternThriving',                     'desc': 'Concept: slinquettes Thriving'},
 ]
 
+#Scoring and Grading
 patternsScoring = [
     {
         "kc": "CLAIM_IV",
@@ -977,10 +1178,10 @@ patternsScoring = [
         "prevScore": 0,
         "patterns":
             [
+
                 [
                     {"value": "patternIncrease_Foliage", "points": 1.0, "type": 0},
                     {"value": "patternIncrease_GreenLongHairSlinquettes", "points": 1.0, "type": 0},
-                    # {"value": ["patternDecrease_Foliage", "patternDecrease_GreenLongHairSlinquettes"], "points": 1.0, "type": 3},
                 ],
 
                 [
@@ -1019,6 +1220,10 @@ patternsScoring = [
                 ],
 
                 [
+                    {"value": ["patternIncrease_Foliage", "patternDecrease_Foliage"], "points": 1.0, "type": 1},
+                ],
+
+                [
                     {"value": "patternChange_Foliage", "points": 0.8, "type": 0},
                 ],
 
@@ -1026,10 +1231,6 @@ patternsScoring = [
                     {"value": "patternIV", "points": 0.8, "type": 0},
                     {"value": "patternChange", "points": 0.8, "type": 0},
                     {"value": "patternDV", "points": 0.8, "type": 0},
-                ],
-
-                [
-                    {"value": "patternChange_FoliageIncreaseException", "points": -0.8, "type": 0},
                 ],
 
                 [
@@ -1051,6 +1252,39 @@ patternsScoring = [
                     {"value": ["patternFoliage_None","patternFoliage_Some"], "points": 1, "type": 5},
                 ],
 
+                #ambiguous use of "increase"
+                [
+                    {"value": "patternChange_FoliageIncreaseException", "points": -0.8, "type": 0},
+                    #{"value": "patternChange", "points": -0.8, "type": 0},
+                ],
+
+                #ambiguous use of "increase" without change (vague relationship)
+                [
+                    {"value": "patternChange_FoliageIncreaseException", "points": -0.5, "type": 0},
+                    {"value": "patternChange", "points": -0.5, "type": 2},
+                ],
+
+                #Contradicting Relationship Penalties
+
+                [
+                    {"value": "patternIncrease_Foliage", "points": -0.0, "type": 0},
+                    {"value": "patternDecrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternDecrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                    {"value": "patternIncrease_Foliage", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternIncrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                    {"value": "patternDecrease_Foliage", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternDecrease_Foliage", "points": -0.0, "type": 0},
+                    {"value": "patternIncrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                ],
 
             ]
     },
@@ -1063,6 +1297,14 @@ patternsScoring = [
             [
                 [
                     {"value": "patternDV", "points": 1.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternVague_DV", "points": 0.5, "type": 0},
+                ],
+
+                [
+                    {"value": "patternIncorrect_DV", "points": -0.0, "type": 0},
                 ],
             ]
     },
@@ -1115,17 +1357,15 @@ patternsScoring = [
                 ],
 
                 [
-                    {"value": "patternChange_Foliage", "points": -0.0, "type": 0},
-                    {"value": ["patternIncrease_GreenLongHairSlinquettes", "patternDecrease_GreenLongHairSlinquettes"], "points": -0.0, "type": 1},
+                    {"value": "patternChange_GreenLongHairSlinquettes", "points": 0.8, "type": 0},
                 ],
 
                 [
-                    {"value": ["patternIncrease_GreenLongHairSlinquettes", "patternDecrease_GreenLongHairSlinquettes"], "points": -0.0, "type": 1},
-                    {"value": "patternChange_Foliage", "points": -0.0, "type": 0},
+                    {"value": ["patternIncrease_GreenLongHairSlinquettes", "patternDecrease_GreenLongHairSlinquettes"], "points": 1.0, "type": 1},
                 ],
 
                 [
-                    {"value": ["patternIncrease_GreenLongHairSlinquettes", "patternDecrease_GreenLongHairSlinquettes"], "points": 1.0, "type": 1}
+                    {"value": "patternChange_GreenLongHairSlinquettes", "points": 0.8, "type": 0},
                 ],
 
                 [
@@ -1166,6 +1406,32 @@ patternsScoring = [
                 [
                     {"value": "patternThriving", "points": 1, "type": 4},
                     {"value": ["patternExtinct","patternEndangered","patternSurviving","patternExpanding"], "points": 1, "type": 5},
+                ],
+
+                #Contradicting Relationship Penalties
+
+                [
+                    {"value": "patternIncrease_Foliage", "points": -0.0, "type": 0},
+                    {"value": "patternDecrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternDecrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                    {"value": "patternIncrease_Foliage", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternIncrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                    {"value": "patternDecrease_Foliage", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternDecrease_Foliage", "points": -0.0, "type": 0},
+                    {"value": "patternIncrease_GreenLongHairSlinquettes", "points": -0.0, "type": 0},
+                ],
+
+                [
+                    {"value": "patternIncorrect_DV", "points": -0.0, "type": 0},
                 ],
             ]
     }

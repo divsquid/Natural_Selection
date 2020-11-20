@@ -40,7 +40,7 @@ gramrNouns = [
 ]
 
 gramrAdjectives = [
-    'more', 'positive', 'faster',
+    'more', 'positive', 'faster', 'greater',
     'less', 'negative', 'slower',
 ]
 
@@ -53,7 +53,7 @@ gramrVerbs = [
     'prove', 'proves', 'proving', 'support', 'supports',
     'did', 'prevent', 'stop', 'receiving', 'recieving', 'getting',
     'start', 'begin', 'cause', 'refutes',
-    'was', 'tried', 'show', 'shows'
+    'was', 'tried', 'show', 'shows', 'will'
 ]
 
 gramrAdverbs = ['rapidly', 'greatly', 'slowly', 'then', 'while', 'what']
@@ -199,6 +199,7 @@ vectorLookups = {
     'more': 700,
     'positive': 700,
     'faster': 700,
+    'greater': 700,
 
     'less': 701,
     'negative': 701,
@@ -256,6 +257,7 @@ vectorLookups = {
     'shows': 816,
     'match': 817,
     'matches': 817,
+    'will': 818,
 
     # adverbs
     'rapidly': 900,

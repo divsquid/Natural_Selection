@@ -14,6 +14,8 @@ gramrSimpleReplacements = [
     ['no foliage', 'none foliage'],
     ['It supports it', 'vagueevidenceconnection'],
     ['it supports it', 'vagueevidenceconnection'],
+    ['green animals', 'vaguedv'],
+    ['Green animals', 'vaguedv'],
     ['passing down', 'passingdown'],
     ['pass down', 'passdown'],
     #['long, green', 'greenlong long, green'],
@@ -54,6 +56,8 @@ gramrNegations = gramrNegations + Nlp2General.gramrNegations
 
 gramrNouns = [
     'foliage',
+    'foilage',
+    'foltaige',
     'tree',
     'trees',
 
@@ -66,16 +70,20 @@ gramrNouns = [
     'monster',
     'organism',
     'animal',
+    'animals',
     'creature',
     'people',
+    'offspring',
 
     'fur',
+    'furs',
     'furred',
     '-furred',
     'hair',
     'haired',
     '-haired',
 
+    'temperature',
 
     'amount',
     'number',
@@ -87,11 +95,7 @@ gramrNouns = [
     'mutation',
     'greenlong',
     'longgreen',
-
-    'temperature',
-
-    'fur',
-
+    'environment',
 
 
     'research',
@@ -100,6 +104,7 @@ gramrNouns = [
     '9',
     '13',
 
+    'vaguedv',
     'vagueevidenceconnection',
 
 ]
@@ -114,6 +119,7 @@ gramrAdjectives = [
     'all',
     'any',
     'different',
+    'possibility',
 
      #fur related adj
     'red',
@@ -132,6 +138,8 @@ gramrAdjectives = [
 
     #other adj
     'long-furred',
+    'optimal',
+    'final',
 
 ]
 gramrAdjectives = gramrAdjectives + Nlp2General.gramrAdjectives
@@ -144,6 +152,7 @@ gramrVerbs = [
     'grow',
 
     'affect',
+    'affects',
     'effect',
     'affected',
     'effected',
@@ -203,6 +212,8 @@ vectorLookups = {
     'wont': 500,
 
     'foliage': 600,
+    'foilage': 600,
+    'foltaige': 600,
     'tree': 600,
     'trees': 600,
 
@@ -216,16 +227,20 @@ vectorLookups = {
     'monster': 601,
     'organism': 601,
     'animal': 601,
+    'animals': 601,
     'creature': 601,
     'people': 601,
+    'offspring': 601,
 
     'fur': 602,
+    'furs': 602,
     'furred': 602,
     '-furred': 602,
     'hair': 602,
     'haired': 602,
     '-haired': 602,
 
+    #other nouns
     'temperature': 603,
 
     'amount': 604,
@@ -238,12 +253,14 @@ vectorLookups = {
     'mutation': 605,
     'greenlong': 605,
     'longgreen': 605,
+    'environment': 606,
 
 
 
     'research': 613,
     'table': 616,
 
+    'vaguedv': 698,
     'vagueevidenceconnection': 699,
 
     'same': 702,
@@ -254,6 +271,7 @@ vectorLookups = {
     'all': 705,
     'any': 705,
     'different': 706,
+    'possibility': 707,
 
     #fur related adj
     'red': 710,
@@ -273,7 +291,7 @@ vectorLookups = {
     #other adj
     'long-furred': 720,
     'optimal': 721,
-
+    'final': 722,
 
 
 
@@ -285,6 +303,7 @@ vectorLookups = {
     'grow': 800,
 
     'affect': 805,
+    'affects': 805,
     'effect': 805,
     'affected': 805,
     'effected': 805,
